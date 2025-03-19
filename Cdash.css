@@ -1,0 +1,303 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*-------------------------------------------Main Code ---------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.wrapper
+{
+    height: 660px;
+    width: 1350px;
+}
+header
+{
+    height: 120px;
+    width: 1364px;
+    background-color: black;
+}
+section {
+    width: 100%; /* Full width for responsiveness */
+    height: 80%; /* Auto height to accommodate content */
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; /* Add padding for better spacing */
+    background: url('2.jpg') no-repeat center center; /* Ensure proper centering */
+    background-size: cover; /* Make background image responsive */
+    color: white; /* Ensure text is readable */
+    text-align: center; /* Center align text */
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7); /* Add subtle shadow for readability */
+}
+
+.operations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between operation boxes */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.operation-box {
+    width: 250px; /* Set a fixed width for the boxes */
+    height: 300px; /* Set a fixed height to ensure consistency */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content vertically */
+}
+
+.operation-box img {
+    width: 100%; /* Make the image fill the container width */
+    height: 150px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    margin-bottom: 15px;
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.operation-box a {
+    color: #ff6600; /* Use a contrasting color */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-top: auto; /* Push link to the bottom */
+}
+
+.operation-box:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    background-color: rgba(255, 102, 0, 0.7); /* Highlight box on hover */
+}
+
+.operation-box a:hover {
+    color: white; /* Invert text color on hover */
+}
+
+
+.logo{
+    float: left;
+    padding-left: 20px;
+}
+.logo img{
+    padding-left: 20px;
+    
+}
+footer
+{
+    height: 250px;
+    width: 1364px;
+    background-color: black;
+}
+li a
+{
+    color: white;
+    text-decoration: none;
+}
+nav
+{
+    float: right;
+    margin-right: 70px;
+    word-spacing: 30px;
+    font-size: 20px;  
+    padding: 20px;
+}
+nav li
+{
+    display: inline-block;
+    line-height: 50px;
+}
+nav ul li a:hover {
+    color: #ff6600;
+}
+#login {
+    
+    float: right;
+    margin-right: 10px;
+    line-height: 20px;
+    padding: 10px 25px;                 
+    background-color: transparent;      
+    color: white;                        
+    border: 2px solid white;             
+    border-radius: 30px;                
+    font-size: 14px;                    
+    font-weight: bold;                  
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: #111111;            /* Black background on hover */
+    color:white;                       /* White text when hovered for contrast */
+    border-color: white;                /* Keep border consistent */
+}
+
+.footer {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-box {
+    width: 23%;
+}
+
+.footer-box h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-box ul {
+    list-style-type: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #ff6600;
+}
+
+.company-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}
+
