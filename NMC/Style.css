@@ -1,0 +1,252 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*-------------------------------------------Main Code ---------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.wrapper
+{
+    height: 660px;
+    width: 1350px;
+}
+header
+{
+    height: 120px;
+    width: 1364px;
+    background-color: black;
+}
+section{
+    width: 1364px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    float: left;
+    padding-left: 20px;
+}
+.logo img{
+    padding-left: 20px;
+    
+}
+footer
+{
+    height: 250px;
+    width: 1364px;
+    background-color: black;
+}
+li a
+{
+    color: white;
+    text-decoration: none;
+}
+nav
+{
+    float: right;
+    margin-right: 200px;
+    word-spacing: 30px;
+    font-size: 20px;  
+    padding: 0px;
+}
+nav li
+{
+    display: inline-block;
+    line-height: 50px;
+}
+nav ul li a:hover {
+    color: #ff6600;
+}
+#login {
+    
+    float: right;
+    margin-right: 10px;
+    line-height: 20px;
+    padding: 10px 25px;                 
+    background-color: transparent;      
+    color: white;                        
+    border: 2px solid white;             
+    border-radius: 30px;                
+    font-size: 14px;                    
+    font-weight: bold;                  
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: #111111;            /* Black background on hover */
+    color:white;                       /* White text when hovered for contrast */
+    border-color: white;                /* Keep border consistent */
+}
+
+.footer {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-box {
+    width: 23%;
+}
+
+.footer-box h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-box ul {
+    list-style-type: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #ff6600;
+}
+
+.company-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}
+

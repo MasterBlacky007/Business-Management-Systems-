@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="login.css">
+        <script type="text/javascript">
+            function Dovalidate(){
+                if(document.Login.Username.value==""){
+                    alert("Please enter username");
+                    return false;
+                }
+                if(document.Login.Password.value==""){
+                    alert("Please enter password");
+                    return false;
+                }|*
+                return true;
+            }
+            </script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images.jpeg">
+                <h3 style="color: white;">NM CEYLON ORGANICS</h3>
+            </div>
+        </header>
+        <section>
+        <div class="wrapper">
+            <form name="login" action="adminloging.php" method="POST">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" name="Username" placeholder="Username"
+                    required>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="Password" placeholder="Password"
+                    required>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+            </form>    
+        </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Company Info -->
+                <div class="footer-box">
+                    <img src="images.jpeg" alt="Company Logo" class="company-logo">
+                    <p>Natus eget occaecati, lobortis, vestibulum nam eros, risus lacinia lacus. Lorem accusantium.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+        
+                <!-- Company Links -->
+                <div class="footer-box">
+                    <h3>Our Company</h3>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">About Company</a></li>
+                        <li><a href="#">Services We Provide</a></li>
+                        <li><a href="#">What We Have Done</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Services Links -->
+                <div class="footer-box">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">Exterior Design</a></li>
+                        <li><a href="#">Landscape Design</a></li>
+                        <li><a href="#">Site Planning</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Contact Details -->
+                <div class="footer-box">
+                    <h3>Contact Details</h3>
+                    <ul>
+                        <li>125, Embilipitiya, Sri Lanka</li>
+                        <li>(+94)112 4565 789</li>
+                        <li>(+94) 123-4567</li>
+                        <li><a href="mailto:kamkanamlage394@gmail.com">nmceylon@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>
